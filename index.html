@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hakkımda</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+    body{
+      background:#f3f4f6;
+      color:#222;
+      line-height:1.6;
+    }
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    /* HEADER */
+    header{
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+      color:white;
+      padding:50px 0;
+    }
+    .header-content{
+      display:flex;
+      align-items:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+    .profile-img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid white;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+    .header-text h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+    .header-text p{
+      max-width:600px;
+      color:#d1d5db;
+    }
+
+    /* SOCIAL */
+    .social-links{
+      margin-top:20px;
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+    .social-links a{
+      text-decoration:none;
+      color:white;
+      background:#334155;
+      padding:12px 18px;
+      border-radius:10px;
+      transition:0.3s;
+    }
+    .social-links a:hover{
+      background:#475569;
+      transform:translateY(-3px);
+    }
+
+    /* SECTIONS */
+    section{
+      margin-top:50px;
+    }
+    .section-title{
+      margin-bottom:20px;
+      font-size:28px;
+      color:#111827;
+    }
+    .card-box{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    /* PROJECTS */
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .project-card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      text-decoration:none;
+      color:black;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+    .project-card:hover{
+      transform:translateY(-5px);
+    }
+    .project-card img{
+      width:100%;
+      height:170px;
+      object-fit:cover;
+    }
+    .project-content{
+      padding:20px;
+    }
+    .project-content h3{
+      margin-bottom:10px;
+    }
+    .project-content p{
+      color:#666;
+      font-size:14px;
+    }
+
+    /* FOOTER */
+    footer{
+      margin-top:60px;
+      background:#0f172a;
+      color:white;
+      padding:40px 0;
+    }
+
+    .footer-content{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:30px;
+    }
+
+    .contact-form{
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+      width:100%;
+      max-width:500px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+      padding:12px;
+      border:none;
+      border-radius:10px;
+      outline:none;
+    }
+
+    .contact-form button{
+      padding:12px;
+      border:none;
+      border-radius:10px;
+      background:#2563eb;
+      color:white;
+      cursor:pointer;
+      transition:0.3s;
+    }
+    .ref-btn{
+     display:inline-block;
+     margin-top:15px;
+     padding:12px 18px;
+     background:#2563eb;
+     color:white;
+     text-decoration:none;
+     border-radius:10px;
+     transition:0.3s;
+    }
+
+    .ref-btn:hover{
+     background:#1d4ed8;
+     transform:translateY(-2px);
+    }
+
+    .contact-form button:hover{
+      background:#1d4ed8;
+    }
+    @media(max-width:768px){
+
+      .header-content{
+        flex-direction:column;
+        text-align:center;
+      }
+      .social-links{
+        justify-content:center;
+      }
+
+    }
+  </style>
+</head>
+<body>
+    <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+
+      <!-- FOTOĞRAF -->
+      <img src="resimler/profilYazılım.png" alt="Profil Fotoğrafı" class="profile-img">
+
+      <!-- BİLGİLER -->
+      <div class="header-text">
+        <h1>Nisa Nur Bayburt</h1>
+        <p>Öğrenci</p>
+
+        <!-- SOSYAL LİNKLER -->
+        <div class="social-links">
+          <!-- <a href="https://github.com/kullaniciadi" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a> --> 
+
+          <a href="https://linkedin.com/in/nisa-b-82283a373" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+
+          <a href="https://www.kariyer.net/ozgecmis/nbxtecyzsy" target="_blank">
+            <i class="fa-solid fa-briefcase"></i> Kariyer.net
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Hakkımda -->
+    <section class="about">
+      <h1>Hakkımda</h1>
+      <p>
+        Lise eğitimimi Bilişim Teknolojileri / Yazılım Geliştirme alanında tamamladım. 
+          Bu süreçte yazılım temelleri, algoritma mantığı ve çeşitli programlama teknolojileri
+          üzerine eğitim aldım ve projeler geliştirdim. Şu anda MCBÜ Turgutlu MYO Bilgisayar 
+          Programcılığı bölümünde öğrenimime devam ediyorum. Eğitimim kapsamında yazılım geliştirme,
+          veritabanı sistemleri ve programlama dilleri üzerine çalışıyorum.Lise yıllarımda HTML, 
+          CSS, Bootstrap, PHP, jQuery, Arduino ve nesne yönelimli programlama gibi birçok farklı 
+          alanda deneyim kazandım. Ayrıca Python, Photoshop, Fusion 360 ve Tinkercad gibi araçlarla
+         da çalışma fırsatı buldum. Staj sürecimde İnsan Kaynakları bölümünde görev alarak iş hayatı tecrübesi edindim.
+        Yazılım alanında kendimi geliştirmeye devam ederek, gelecekte bu alanda profesyonel olarak
+        yer almayı hedefliyorum.
+      </p>
+    </section>
+
+    <!--Eğitim Bilgilerim-->
+    <section>
+      <h2 class="section-title">Eğitim Bilgileri</h2>
+      <div class="card-box">
+        <h3>Manisa Celal Bayar Üniversitesi</h3>
+        <p>
+          Turgutlu MYO / Bilgisayar Programcılığı
+        </p>
+        <p>2025 - Devam Ediyor</p>
+        <br>
+        <h3>Mopak MTAL</h3>
+        <p>
+          Bilişim Teknolojileri / Yazılım Geliştirme
+        </p>
+        <p>Eylül 2021 - Haziran 2025</p>
+      </div>
+    </section>
+
+    <!-- DENEYİM -->
+    <section>
+      <h2 class="section-title">Staj</h2>
+      <div class="card-box">
+        <h3>Dönmez Debriyaj San. ve Tic. A.Ş.</h3>
+        <p>İnsan Kaynakları Stajyeri</p>
+        <p>Eylül 2024- Haziran 2025</p> <br>
+        <p>
+          Buraya yaptığın işler
+        </p>
+      </div>
+    </section> <br>
+
+    <!-- Projeler -->
+    <h2 class="projects-title">Projelerim</h2>
+    <section class="projects">
+
+      <!-- Proje 1 -->
+      <a class="project-card" href="CarpimOyun/carpimOyunu.html" target="_blank">
+        <img src="resimler/carpimOyunGorsel.jpg" alt="" >
+        <div class="card-content">
+          <h3>Sayı Çarpım Oyunu</h3>
+          <p>Rastgele sayı çarpım sonucu kontrol etme oyunu..</p>
+        </div>
+      </a>
+
+      <!-- Proje 2 -->
+      <a class="project-card" href="sayiTahmi/sayiTahminOyunu.html" target="_blank">
+        <img src="resimler/sayitahmingorsel.jpg" alt="" >
+        <div class="card-content">
+          <h3>Sayı Tahmin Oyunu</h3>
+          <p>Tahmin edilen sayıyı bulma oyunu.</p>
+        </div>
+      </a>
+
+      <!-- Proje 3 -->
+      <a class="project-card" href="TarihHesaplayici/index.html" target="_blank">
+        <img src="resimler/tarihhesapgorsel.jpg" alt="" >
+        <div class="card-content">
+          <h3>Tarih Hesaplayıcı</h3>
+          <p>Belirtilen tarihten ve istenilen gün sonrasındaki tarihi bulma uygulaması.</p>
+        </div>
+      </a>
+
+      <!-- Proje 4 -->
+      <a class="project-card" href="kiloEndexi/index1.html" target="_blank">
+        <img src="resimler/BMIgorsel.jpg" alt="" >
+        <div class="card-content">
+          <h3>Kilo Endeksi</h3>
+          <p>Vüvut kitle endeksini gösterir.</p>
+        </div>
+      </a>
+
+      <!-- Proje 5 -->
+      <a class="project-card" href="RenkTahmin/renkTahminOyunu.html" target="_blank">
+        <img src="resimler/renktahminoyun.jpg" alt="" >
+        <div class="card-content">
+          <h3>Renk Tahmin Oyunu</h3>
+          <p>Belirtilen rengi Şıklarda bulma oyunu.</p>
+        </div>
+      </a>
+
+      <!-- Proje 6 -->
+      <a class="project-card" href="DovizCeviri/index2.html" target="_blank">
+        <img src="resimler/dovizgorsel.jpg" alt="" >
+        <div class="card-content">
+          <h3>Döviz Çevirici</h3>
+          <p>Belirtilen miktarı istenilen döviz kuruna çevirir.</p>
+        </div>
+      </a>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <h2>İletişim</h2>
+        <p>Email: nisabayburt1@gmail.com</p>
+        <p>Telefon: 0544 382 94 34</p>
+      </div>
+      <!-- MAİL FORMU -->
+      <form class="contact-form" action="mailto:nisabayburt1@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="isim" placeholder="Adınız" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="mesaj" rows="5" placeholder="Mesajınız"required></textarea>
+        <button type="submit"> Mesaj Gönder </button>
+      </form>
+    </div>
+  </footer>
+
+</body>
+</html>
