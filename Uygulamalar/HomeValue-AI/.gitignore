@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.DS_Store
+
+# Generated datasets and model artifacts
+data/*.csv
+models/*.pkl
+models/*.joblib
+
+# Experiment outputs
+reports/generated/
